@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WrappedValue'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Forget the struggle of decoding Strings!'
   s.swift_version    = '4.2'
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'WrappedValue/Classes/**/*'
   
   # s.resource_bundles = {
   #   'WrappedValue' => ['WrappedValue/Assets/*.png']
