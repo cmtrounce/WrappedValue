@@ -18,7 +18,7 @@ public struct WrappedValue<T: Wrappable>: Codable  {
     
     public typealias RT = T
     
-    init(value: T) {
+    public init(value: T) {
         self.value = value
     }
     
