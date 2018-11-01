@@ -9,7 +9,7 @@
 
 Forget the struggle of having to manually parse Strings to Ints, Doubles and other data types!
 
-Using the power of generics, WrappedValue will automatically decode them for you, with some life-changing error handling.
+Using the power of `Codable`, `WrappedValue` will automatically decode them for you, with some life-changing error handling.
 
 ## Basic Usage
 
@@ -17,7 +17,7 @@ Using the power of generics, WrappedValue will automatically decode them for you
 
 typealias WrappedInt = WrappedValue<Int>
 
-struct Person {
+struct Person: Codable {
   let age: WrappedInt
   let name: String
 }
@@ -29,7 +29,7 @@ Access the `Int` through  `person.age.value`.
 
 
 
-`WrappedValue` also conforms to `Hashable`,  `Equatable` and `Numeric` 
+In addition to `Codable`,  `WrappedValue` also conforms to `Hashable`,  `Equatable` and `Numeric` 
 
 ## Example
 
