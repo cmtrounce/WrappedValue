@@ -2,6 +2,6 @@ use_frameworks!
 target 'WrappedValue_Tests' do
   pod 'WrappedValue', :path => '../'
   
-  pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
+  pod 'Quick'
+  pod 'Nimble'
 end

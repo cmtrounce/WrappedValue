@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		01CC16BED498C31A7671B44E /* Pods_WrappedValue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAA1F57199BD3BC6257B96E /* Pods_WrappedValue_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		F2140955218BACB00081F9ED /* NumericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2140954218BACB00081F9ED /* NumericTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11FAE0CEF9BA74755D3A1989 /* WrappedValue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WrappedValue.podspec; path = ../WrappedValue.podspec; sourceTree = "<group>"; };
-		4629F3EC65B7454A00C040D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		11FAE0CEF9BA74755D3A1989 /* WrappedValue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WrappedValue.podspec; path = ../WrappedValue.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4629F3EC65B7454A00C040D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* WrappedValue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrappedValue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8D1BCAA359E887A9F6FB4D94 /* Pods-WrappedValue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedValue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FAA1F57199BD3BC6257B96E /* Pods_WrappedValue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WrappedValue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EE1D9532166224BBBC3F9A /* Pods-WrappedValue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedValue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F50FE8B69550926D29E87C25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F2140954218BACB00081F9ED /* NumericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericTests.swift; sourceTree = "<group>"; };
+		F50FE8B69550926D29E87C25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				F2140954218BACB00081F9ED /* NumericTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -106,9 +109,9 @@
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "WrappedValue_Tests" */;
 			buildPhases = (
 				D6BFBDF198F65F447D3B5D3C /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				607FACE11AFB9204008FA782 /* Sources */,
 				2ECE0AFB1F2AD1DD7306D71B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -130,14 +133,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 75SMYU6JAM;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -176,7 +175,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/WrappedValue/WrappedValue.framework",
@@ -189,7 +188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6BFBDF198F65F447D3B5D3C /* [CP] Check Pods Manifest.lock */ = {
@@ -218,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				F2140955218BACB00081F9ED /* NumericTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +327,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D1BCAA359E887A9F6FB4D94 /* Pods-WrappedValue_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = 75SMYU6JAM;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -341,7 +339,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrappedValue_Example.app/WrappedValue_Example";
 			};
 			name = Debug;
 		};
@@ -349,17 +346,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6EE1D9532166224BBBC3F9A /* Pods-WrappedValue_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = 75SMYU6JAM;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrappedValue_Example.app/WrappedValue_Example";
 			};
 			name = Release;
 		};

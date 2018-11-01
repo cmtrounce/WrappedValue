@@ -1,0 +1,6 @@
+framework module Pods_WrappedValue_Tests {
+  umbrella header "Pods-WrappedValue_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module WrappedValue {
+  umbrella header "WrappedValue-umbrella.h"
+
+  export *
+  module * { export * }
+}
