@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WrappedValue'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Forget the struggle of decoding Strings!'
   s.swift_version    = '4.2'
 
