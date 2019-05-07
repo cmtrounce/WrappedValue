@@ -1,10 +1,10 @@
 PODS:
-  - Nimble (7.3.1)
+  - Nimble (7.3.4)
   - Quick (1.3.2)
-  - WrappedValue (0.1.0)
+  - WrappedValue (0.1.8)
 
 DEPENDENCIES:
-  - Nimble
+  - Nimble (~> 7.3.3)
   - Quick
   - WrappedValue (from `../`)
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
-  WrappedValue: 9aefb62abb73047325d8163b0348fe8453768005
+  WrappedValue: 72cec0defacbb3adb8be51c68710d34172a35a14
 
-PODFILE CHECKSUM: b4b4f41ce4792d5036ca714fc3a15f09889ffd3d
+PODFILE CHECKSUM: 92efaf6ab02767b9a0c7359c0ccc20f7c1a8b499
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.6.0
