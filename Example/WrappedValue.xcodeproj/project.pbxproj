@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01CC16BED498C31A7671B44E /* Pods_WrappedValue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAA1F57199BD3BC6257B96E /* Pods_WrappedValue_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F2140955218BACB00081F9ED /* NumericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2140954218BACB00081F9ED /* NumericTests.swift */; };
+		F2140985218CB80D0081F9ED /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2140984218CB80D0081F9ED /* DecodableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,11 +17,11 @@
 		4629F3EC65B7454A00C040D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* WrappedValue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrappedValue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8D1BCAA359E887A9F6FB4D94 /* Pods-WrappedValue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedValue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FAA1F57199BD3BC6257B96E /* Pods_WrappedValue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WrappedValue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EE1D9532166224BBBC3F9A /* Pods-WrappedValue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedValue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WrappedValue_Tests/Pods-WrappedValue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F2140954218BACB00081F9ED /* NumericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericTests.swift; sourceTree = "<group>"; };
+		F2140984218CB80D0081F9ED /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
 		F50FE8B69550926D29E87C25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,9 +67,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				F2140954218BACB00081F9ED /* NumericTests.swift */,
+				F2140984218CB80D0081F9ED /* DecodableTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				F2140985218CB80D0081F9ED /* DecodableTests.swift in Sources */,
 				F2140955218BACB00081F9ED /* NumericTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

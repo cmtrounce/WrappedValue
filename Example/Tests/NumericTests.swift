@@ -13,29 +13,34 @@ import WrappedValue
 class NumericSpec: QuickSpec {
     
     override func spec() {
+        
         describe("WrappedValue can be treated like a Numeric value") {
-            
-            it("can be added") {
-                let value1 = WrappedValue<Int>.init(integerLiteral: 2)
-                let value2 = WrappedValue<Int>.init(integerLiteral: 4)
-                let result = value1 + value2
-                expect(result.value) == 6
+            context("with random values") {
+                let allValues = [Int](-10...10)
+                
+                allValues.forEach { n1 in
+                    allValues.forEach { n2 in
+                        
+                        let value1 = WrappedValue<Int>.init(integerLiteral: n1)
+                        let value2 = WrappedValue<Int>.init(integerLiteral: n2)
+                        
+                        it("can be added") {
+                            let result = value1 + value2
+                            expect(result.value) == n1 + n2
+                        }
+                        
+                        it("can be multiplied") {
+                            let result = value1 * value2
+                            expect(result.value) == n1 * n2
+                        }
+                        
+                        it("can be taken away") {
+                            let result = value1 - value2
+                            expect(result.value) == n1 - n2
+                        }
+                    }
+                }
             }
-            
-            it("can be multiplied") {
-                let value1 = WrappedValue<Int>.init(integerLiteral: 2)
-                let value2 = WrappedValue<Int>.init(integerLiteral: 4)
-                let result = value1 * value2
-                expect(result.value) == 8
-            }
-            
-            it("can be taken away") {
-                let value1 = WrappedValue<Int>.init(integerLiteral: 2)
-                let value2 = WrappedValue<Int>.init(integerLiteral: 4)
-                let result = value1 - value2
-                expect(result.value) == -2
-            }
-            
         }
     }
 }
