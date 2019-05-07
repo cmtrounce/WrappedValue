@@ -3,5 +3,5 @@ target 'WrappedValue_Tests' do
   pod 'WrappedValue', :path => '../'
   
   pod 'Quick'
-  pod 'Nimble'
+  pod 'Nimble', '~> 7.3.3'
 end
