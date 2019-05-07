@@ -1,5 +1,5 @@
 language: swift
-xcode_workspace: WrappedValue/WrappedValue.xcworkspace # path to your xcodeproj folder
+xcode_workspace: Example/WrappedValue.xcworkspace # path to your xcodeproj folder
 xcode_scheme: WrappedValue
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
 osx_image: xcode10.2
