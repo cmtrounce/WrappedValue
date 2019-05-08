@@ -12,3 +12,11 @@ notifications:
     on_start:   always # default: never
     on_cancel:  always # default: always
     on_error:   always # default: always
+addons:
+  sonarcloud:
+    organization: "cmtrounce-github" # the key of the org you chose at step #3
+    token:
+      secure: OSFywnUT0wf+pygKOP9zJWjIZLjRFQ3CG1wgQ/vm/aCH5ZXrpLIFnV32LIdDxJgh5t7kiw3e0xmBE2i0hXncI3wbwHWGEoCJbPOqsnz/eaK2izjdIcPOHyXI1p1ynqLqOHPTczP5ESCDo1B3wqlRDU3McGpJ8+vK3NK7UXVcwtUZxzW+gzDv3GrMhWt2dcD7bf55f2+plwKiY5iqyuMObZ2UT4dzwtYan4j6h2mS21/y26E1ZdMJ34p1J1R0fccoaGtEzIMEj6tCrcEOHRRx+klGKF/HdhOo3C59Lsr1DzTg331sr7DNp+SUc2ujPBiqTZZkwTbrXR7xG4vxjZaU4LS9g8qPQM9fXCGaZIkhLFIFDuNYgoeNAWLQlqPZB/yoMj6kDlnQKxoDo7LHHz15gZsbyKvywvr+OVL0gHfSk7g97bIS31I6LWklQpg2wN6E2xatBZ0jo/Ayf6j+E52d3AWy/KzDkKEwYJFdSQoWbhsrjg7NC2XvPswOClwS6I96iyTUdAX6xHa0+lRhMx/biYEtZaU10b/15dbpcXHfnOWrNRzJcB8B8Au0DfXA7wlPPo7EJuAsCZ21OIYYnepLwZlL2yTroIrJNSSJbaKlYrqDxXcrt7JLKVdbMXF8TkRRQqj+8n1rMS7bEp1GXFa8b+RD9GwNc1nL1opVRouT1pc=
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
