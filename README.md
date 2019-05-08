@@ -33,11 +33,14 @@ In addition to `Codable`,  `WrappedValue` also conforms to `Hashable`,  `Equatab
 
 ## Example
 
+The Example project was built and tested using Travis CI.
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
-WrappedValue is compiled using Swift 4.2 in Xcode 10.
+WrappedValue is compiled using Swift 5.0 in Xcode 10.2. 
+The project is compatible with Swift 4.2 and Swift 5.0
 
 ## Installation
 
