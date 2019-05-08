@@ -31,7 +31,7 @@ public struct WrappedValue<T: Wrappable>: Codable  {
             let valueString = try container.decode(String.self)
             
             guard let value = T(valueString) else {
-                throw WrappedValue.parsingError(fromString: valueString)
+                throw WrappedValue.stringDecodeError(stringValue: valueString)
             }
             
             if let lastCodingKey = decoder.codingPath.last {
@@ -48,13 +48,20 @@ public struct WrappedValue<T: Wrappable>: Codable  {
         var container = encoder.singleValueContainer()
         try container.encode(value)
     }
+}
+
+private extension WrappedValue {
     
-    static func parsingError(fromString string: String) -> NSError {
+    /// Generates an error based on the data provided and the type of wrapped value
+    ///
+    /// - Parameter value: the value that was attempted to be decoded
+    /// - Returns: the generated error.
+    static func stringDecodeError(stringValue value: String) -> NSError {
         return NSError(
-            domain: "DTTWrappedValueErrorDomain",
+            domain: "WrappedValueErrorDomain",
             code: 1,
             userInfo: [
-                NSLocalizedDescriptionKey: "The string \"\(string)\" is not parsable as an \(T.self)"
+                NSLocalizedDescriptionKey: "The string \"\(value)\" is not parsable as an \(T.self)"
             ])
     }
 }
@@ -65,5 +72,3 @@ extension WrappedValue: CustomStringConvertible {
         return "\(self.value)"
     }
 }
-
-
